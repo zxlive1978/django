@@ -1,0 +1,15 @@
+
+{% extends 'tech/base.html' %}
+{% load widget_tweaks %}
+
+{% block contents %}
+{% for tech in techs%}
+    <div class="post">
+        <div class="date">
+            {{ tech.name }}   {{ tech.place }} {{ tech.conf }}
+        </div>
+
+
+    </div>
+{% endfor %}
+{% endblock %}
